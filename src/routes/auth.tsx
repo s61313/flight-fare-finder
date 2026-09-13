@@ -170,13 +170,14 @@ function AuthPage() {
 
           <p className="mt-6 text-center text-sm text-muted-foreground">
             {mode === "signin" ? "New here?" : "Already have an account?"}{" "}
-            <button
+            <Button
               type="button"
-              className="font-medium text-primary underline-offset-4 hover:underline"
+              variant="link"
+              className="h-auto p-0"
               onClick={() => changeMode(mode === "signin" ? "signup" : "signin")}
             >
               {mode === "signin" ? "Create an account" : "Sign in instead"}
-            </button>
+            </Button>
           </p>
         </div>
       </section>
